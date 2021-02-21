@@ -1,0 +1,39 @@
+body {
+  padding: 30px;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+  color: #768696;
+  background-color: #e7ecf2;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  font-weight: 500;
+}
+
+.section {
+  max-width: 300px;
+  width: 100%;
+}

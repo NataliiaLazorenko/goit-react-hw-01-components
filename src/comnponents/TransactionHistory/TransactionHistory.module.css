@@ -1,0 +1,37 @@
+@value text-dark-theme-color from '../../vars.module.css';
+@value card-background-color from '../../vars.module.css';
+@value shadow from '../../vars.module.css';
+
+.transaction-history {
+  max-width: 550px;
+  width: 100%;
+  line-height: 2;
+
+  border-radius: 4px;
+  box-shadow: shadow;
+}
+
+.table-head {
+  text-transform: uppercase;
+
+  color: text-dark-theme-color;
+  background-color: #00bcd5;
+}
+
+.transaction {
+  background-color: card-background-color;
+}
+
+.transaction:nth-child(2n) {
+  background-color: #ecf1f4;
+}
+
+.transaction-type,
+.table-head-type {
+  text-indent: 35%;
+  text-align: start;
+}
+
+.transaction-type::first-letter {
+  text-transform: uppercase;
+}

@@ -1,0 +1,61 @@
+@value card-background-color from '../../vars.module.css';
+@value border-color from '../../vars.module.css';
+@value shadow from '../../vars.module.css';
+
+.profile {
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+  background-color: card-background-color;
+  box-shadow: shadow;
+}
+
+.description {
+  padding: 30px;
+}
+
+.avatar {
+  width: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
+  border-radius: 50%;
+  box-shadow: shadow;
+}
+
+.name {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+
+  color: #122236;
+}
+
+.tag {
+  margin-bottom: 10px;
+}
+
+.stats {
+  display: flex;
+
+  background-color: #ecf1f4;
+}
+
+.item {
+  width: calc(100% / 3);
+  padding: 20px 10px;
+
+  border: 1px solid border-color;
+}
+
+.label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.quantity {
+  font-weight: 700;
+
+  color: #122236;
+}

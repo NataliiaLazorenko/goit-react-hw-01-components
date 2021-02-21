@@ -1,0 +1,48 @@
+@value card-background-color from '../../vars.module.css';
+@value shadow from '../../vars.module.css';
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+
+  border-radius: 4px;
+  background-color: card-background-color;
+  box-shadow: shadow;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 70px;
+  margin-right: 16px;
+
+  border-radius: 4px;
+  box-shadow: shadow;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+
+  color: #122236;
+}
+
+.status {
+  width: 25px;
+  height: 25px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+
+.online {
+  composes: status;
+  background-color: #ff5056;
+}
+
+.offline {
+  composes: status;
+  background-color: #54ab56;
+}
